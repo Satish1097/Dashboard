@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://kit.fontawesome.com/cb91b67637.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="dashboard">
+        <div class="sidenav" id="sidenav">
+            <div class="logo">
+                <div class="iconlogo">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <span>Variable</span>
+            </div>
+
+            <div class="profile">
+                <img src="images/st.jpg" alt="">
+                <div class="text">
+                    <p>Satish kumar</p>
+                    <p style="color: gray; margin-top: 0px;">Admin</p>
+                </div>
+            </div>
+            <ul>
+                <li><a id="c" href=""><i class="fa-solid fa-gauge"></i><span id="s">Dashboard</span></a></li>
+                <li><a href=""><i class="fa-brands fa-wpforms"></i><span>Forms</span></a></li>
+                <li><a href=""><i class="fa-solid fa-laptop-code"></i><span>Element</span></a></li>
+                <li><a href=""><i class="fa-solid fa-chart-line"></i><span>Chart</span></a></li>
+                <li><a href=""><i class="fa-regular fa-file-lines"></i><span>Pages</span></a></li>
+            </ul>
+
+            <li id="li"><a href=""><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a></li>
+        </div>
+        <div class="board" id="board">
+            <div class="topnav">
+                <button onclick="openmenu()"><i class="fa-solid fa-bars"></i></button>
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search here...">
+                </div>
+                <li id="notif"><i class="fa-solid fa-bell"></i><span>Notification</span></li>
+                <img src="images/st.jpg" alt="">
+            </div>
+            <div class="bottom">
+                <div class="card">
+                    <div class="scard">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <div class="text">
+                            <p>Today Sale</p>
+                            <span>$2490</span>
+                        </div>
+                    </div>
+                    <div class="scard">
+                        <i class="fa-solid fa-chart-column"></i>
+                        <div class="text">
+                            <p>Total Sale</p>
+                            <span>$24090</span>
+                        </div>
+                    </div>
+                    <div class="scard">
+                        <i class="fa-solid fa-chart-area"></i>
+                        <div class="text">
+                            <p>Today Revenue</p>
+                            <span>$2933</span>
+                        </div>
+                    </div>
+                    <div class="scard">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <div class="text">
+                            <p>Total Revenue</p>
+                            <span>$49490</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart">
+                    <div class="sale">
+                        <div class="top">
+                            <p>Worldwide sales</p>
+                            <a href="">View All</a>
+                        </div>
+                        <div class="botom">
+                            <img src="images/sale.png" alt="" usemap="#graphmap">
+                        </div>
+                    </div>
+                    <div class="revenue">
+                        <div class="top">
+                            <p>Sales $ Revenue</p>
+                            <a href="">View All</a>
+                        </div>
+                        <div class="botom">
+                            <img src="images/revenue.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>&copy;<a href="">2024 Variable World.</a> All Rights Reserved.</p>
+                    <div class="designer">
+                        <p>Designed By: Satish Kumar</p>
+                        <span>Variable</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function openmenu(){
+                var x=document.getElementById('sidenav');
+                x.style.left='0%';
+            }
+
+        </script>
+</body>
+
+</html>
